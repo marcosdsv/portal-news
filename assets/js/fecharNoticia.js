@@ -13,3 +13,18 @@ function fechar3(){
 	document.getElementById("corpoNoticia3").style.display = 'none';
 	document.getElementById("link3").focus();
 }
+function fechar4(){
+	document.getElementById("link4").style.display = 'block';
+	document.getElementById("corpoNoticia4").style.display = 'none';
+	document.getElementById("link4").focus();
+}
+function fechar5(){
+	document.getElementById("link5").style.display = 'block';
+	document.getElementById("corpoNoticia5").style.display = 'none';
+	document.getElementById("link5").focus();
+}
+function fechar6(){
+	document.getElementById("link6").style.display = 'block';
+	document.getElementById("corpoNoticia6").style.display = 'none';
+	document.getElementById("link6").focus();
+}
