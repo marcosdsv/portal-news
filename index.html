@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>Página inicial - Portal News</title>
     <link rel="stylesheet" href="assets/css/nav.css">
+	<link rel="stylesheet" href="assets/css/estilo.css">
 	<script src="assets/js/expandirNoticia.js"></script>
 	<script src="assets/js/fecharNoticia.js"></script>
 </head>
 <body>
 <nav class="navbar">
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Home</a></li>
-<li><a href="#">Home</a></li>
-<li><a href="#">Home</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="saiba mais.html">Saiba mais</a></li>
 </ul>	
 </nav>
 <main>
@@ -25,29 +26,29 @@
 <h2>Covid-19: novo lote de vacinas da Pfizer chega ao Brasil</h2>
 <img src="#" alt="descrição"><
 <p>Um lote com 1.072.890 de doses da vacina Pfizer/Biontech contra a covid-19 chegou ao Aeroporto de Viracopos, em Campinas (SP), na noite de hoje (12), por volta das 19h40.</p>
-<a href="#" id="link1" style="display: block" onclick="mostrarNoticia1()">Continuar lendo</a>
+<a href="#" class="links" id="link1" style="display: block" onclick="mostrarNoticia1()">Continuar lendo</a>
 <div id="corpoNoticia1" style="display: none">
 <p>Além dessa remessa, mais 3,2 milhões de doses do imunizante da farmacêutica foram entregues nesta semana, entre domingo (8) e ontem (11), ao Ministério da Saúde. Segundo a pasta, as novas doses serão distribuídas nos próximos dias para todo o país depois de reunião para alinhamento da estratégia de distribuição entre União, estados e municípios.</p>
 <p>Com este lote, a Pfizer entregou um total de 40,4 milhões de doses ao governo brasileiro. Faltam 7,5 milhões, das 17,6 milhões de doses previstas para entrega entre os dias 3 e 22 de agosto.</p>
 <p>Entre o final de agosto e setembro, há a previsão da chegada de quase 52,4 milhões de doses – que fazem parte do primeiro acordo firmado no dia 19 de março e que contempla a disponibilização de 100 milhões de vacinas até o final do terceiro trimestre de 2021.</p>
 <p>O segundo contrato, assinado em 14 de maio, prevê a entrega de mais 100 milhões de doses entre outubro e dezembro. Ao longo do ano, a farmacêutica fornecerá um total de 200 milhões de doses de vacina ao Brasil.</p>
-<a href="#" id="fechar1" onclick="fechar1()">Fechar notícia</a>
+<a href="#" class="links" id="fechar1" onclick="fechar1()">Fechar notícia</a>
 </div>
 </div>
 <div class="noticia2">
 <h2>Com 60% da população vacinada, mortes e casos de covid-19 caem 40%</h2>
 <p>Com a vacinação de mais de 96 milhões de brasileiros contra a covid-19 com, pelo menos, a primeira dose do imunizante, o número de casos e de óbitos pela doença caíram cerca de 40%, em um mês, de acordo com dados do LocalizaSUS, plataforma do Ministério da Saúde.</p>
-<a href="#" id="link2" style="display: block" onclick="mostrarNoticia2()">Continuar lendo</a>
+<a href="#" class="links" id="link2" style="display: block" onclick="mostrarNoticia2()">Continuar lendo</a>
 <div id="corpoNoticia2" style="display: none">
 <p>Os números consideram a média móvel de casos e mortes de 25 de junho a 25 de julho deste ano. No caso das mortes, a queda é de 42%: passou de uma média móvel de 1,92 mil para 1,17 mil, no período. O número de casos caiu para 42,77 mil na média móvel de domingo (25), o que representa redução de 40% em relação ao dia 25 de junho, segundo o Ministério da Saúde.</p>
 <p>O Brasil ultrapassou a marca de 60% da população vacinada com, pelo menos, uma dose de vacina contra a covid-19. Nessa situação já são mais de 96,3 milhões de brasileiros, dos 160 milhões com mais de 18 anos. Apesar da boa marca de primeira dose, segundo dados do vacinômetro do Ministério da Saúde, o número de pessoas com ciclo de imunização completo, ou seja, que tomaram duas doses da vacina ou a dose única é de 37,9 milhões de pessoas. Para que as vacinas sejam de fato eficazes, as autoridades de saúde alertam que é necessário que as pessoas tomem as duas doses. "A medida reforça o sistema imunológico e reduz as chances de infecção grave, gravíssima e, principalmente, óbitos em decorrência da covid-19", destaca o Ministério.</p>
-<a href="#" id="fechar2" onclick="fechar2()">Fechar</a>
+<a href="#" class="links" id="fechar2" onclick="fechar2()">Fechar</a>
 </div>
 </div>
 <div class="noticia3">
 <h2>Covid: Metade da população brasileira já tomou ao menos uma dose de vacina</h2>
 <p>Hoje, o Brasil conta com mais da metade de sua população parcialmente vacinada contra a covid-19. No total, 106.221.963 brasileiros receberam a primeira dose de imunizante contra a doença, o equivalente a 50,16% da população do país. O levantamento é do consórcio de veículos de imprensa, do qual o UOL faz parte, com base nas informações fornecidas pelas secretarias estaduais de saúde.</p>
-<a href="#" id="link3" style="display: block" onclick="mostrarNoticia3()">Continuar lendo</a>
+<a href="#" class="links" id="link3" style="display: block" onclick="mostrarNoticia3()">Continuar lendo</a>
 <div id="corpoNoticia3" style="display: none">
 <p>Nas últimas 24 horas, 1.160.055 brasileiros receberam a primeira dose de vacina.</p>
 <p>A segunda dose ou a dose única de imunizante já foi aplicada em 44.938.520 brasileiros até o momento, o correspondente a 21,22% da população nacional. Nas últimas 24 horas, 662.835 brasileiros completaram o ciclo vacinal —643.149 receberam a segunda dose, e outros 19.686, a dose única.</p>
@@ -58,7 +59,7 @@
 <p>Na quarta, o Ministério da Saúde afirmou que enviou um número menor de doses da Pfizer porque, em outras entregas, São Paulo retirou mais doses do que o previsto da CoronaVac. O estado negou.</p>
 <p>Hoje, ao lado do secretário estadual de saúde, Jean Gorinchteyn, o ministro Queiroga disse que busca soluções para o problema.</p>
 <p>"Estamos discutindo o número exato de doses a serem compensadas e a forma de compensar. O que está se discutindo aqui são milhares de doses que podem ser facilmente compensadas nas próximas pautas", afirmou Queiroga.</p>
-<a href="#" id="fechar3" onclick="fechar3()">Fechar notícia</a>
+<a href="#" class="links" id="fechar3" onclick="fechar3()">Fechar notícia</a>
 </div>
 </div>
 </div>	
