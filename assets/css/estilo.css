@@ -1,0 +1,95 @@
+/** portal-news stylesheet **/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table-row;
+}
+.col-12 {
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border:1px solid #ccc;
+}
+.navbar .margin-right {
+   margin-right: auto;
+}
+.navbar > div .nav-item,
+.navbar > div .nav-item:hover,
+.navbar > div .nav-item:visited,
+.navbar > div .nav-item:focus {
+    color: black;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+.navbar > div .nav-item:hover,
+.navbar > div .nav-item:focus {
+    background: chocolate;
+}
+.content {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.boxform {
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+.contato-form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.form-input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.btn-send {
+    border: none;
+    display: block;
+    width: 100%;
+    background-color: #04aa6d;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+footer {
+    border:1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+footer p {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+}
