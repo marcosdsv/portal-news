@@ -7,11 +7,12 @@
 .container {
     width: 100%;
     height: auto;
+    background-color: #F0F7D4;
 }
 .row::after {
     content: "";
     clear: both;
-    display: table-row;
+    display: table;
 }
 .col-12 {
     width: 100%;
@@ -23,22 +24,27 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    border:1px solid #ccc;
+    background-color: #092834;
+    letter-spacing: 1px;
 }
 .navbar .margin-right {
     margin-right: auto;
 }
+.navbar .nav-item.logo:hover {
+    background-color: #092834;
+    color: #B2D732;
+}
 .navbar > div .nav-item,
-.navbar > div .nav-item:hover,
 .navbar > div .nav-item:visited,
 .navbar > div .nav-item:focus {
-    color: black;
+    color: #F0F7D4;
     text-decoration: none;
     padding: 20px 30px;
 }
 .navbar > div .nav-item:hover,
 .navbar > div .nav-item:focus {
-    background: chocolate;
+    background-color: #F0F7D4;
+    color: #092834;
 }
 .content {
     width: 100%;
@@ -46,32 +52,42 @@
     margin-top: 20px;
 }
 .boxform {
-    margin: 0 auto;
     padding: 24px;
     display: flex;
     justify-content: center;
 }
 .contato-form {
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid white;
     padding: 1rem;
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.contato-form .title-contato {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.title-contato, .label {
+    color: #092834;
 }
 .form-input, textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 4px;
+    margin-bottom: 12px;
     resize: vertical;
 }
 .btn-send {
     border: none;
     display: block;
     width: 100%;
-    background-color: #04aa6d;
+    background-color: #092834;
     padding: 12px;
+    margin: 10px 0;
     border-radius: 4px;
     font-size: 0.9rem;
     letter-spacing: 1px;
@@ -80,11 +96,12 @@
     cursor: pointer;
 }
 footer {
-    border:1px solid #ccc;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border:1px solid #092834;
+    background-color: #092834;
     width: 100%;
     padding: 20px;
 }
@@ -92,4 +109,7 @@ footer p {
     font-size: 1.2rem;
     padding: 10px;
     margin: 10px;
+    color: #b2d732;
+    letter-spacing: 1px;
 }
+/** html responsive **/
