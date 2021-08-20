@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container {
     width: 100%;
@@ -21,30 +23,63 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0;
     background-color: #092834;
     letter-spacing: 1px;
+    border-style: none;
 }
 .navbar .margin-right {
     margin-right: auto;
 }
-.navbar .nav-item.logo:hover {
-    background-color: #092834;
-    color: #B2D732;
-}
-.navbar > div .nav-item,
-.navbar > div .nav-item:visited,
-.navbar > div .nav-item:focus {
+.navbar .nav-item,
+.navbar .nav-item:visited,
+.navbar .nav-item:focus {
     color: #F0F7D4;
     text-decoration: none;
     padding: 20px 30px;
+    font-weight: 500;
 }
-.navbar > div .nav-item:hover,
-.navbar > div .nav-item:focus {
-    background-color: #F0F7D4;
-    color: #092834;
+.navbar .nav-item.logo:hover,
+.navbar .nav-item:hover,
+.navbar .nav-item:focus {
+    color: #B2D732;
+}
+.sidepanel {
+    height: 100vh; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: -460px;
+    border:1px solid #092834;
+    background-color: #092834;
+    overflow: hidden; 
+    padding-top: 60px; 
+    transition: 0.6s ease;
+}
+.sidepanel .side-item {
+    display: block;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px 40px 5px 30px;
+    line-height: 30px;
+    position: relative;
+}
+.sidepanel .side-item:hover {
+    color: #b2d732;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: #b2d732;
 }
 .content {
     width: 100%;
@@ -67,9 +102,11 @@
     padding: 10px;
     text-align: center;
     margin-bottom: 12px;
+    font-size: 1.8rem;
 }
 .title-contato, .label {
     color: #092834;
+    font-weight: 300;
 }
 .form-input, textarea {
     width: 100%;
@@ -90,10 +127,23 @@
     margin: 10px 0;
     border-radius: 4px;
     font-size: 0.9rem;
+    font-weight: 300;
     letter-spacing: 1px;
     color: white;
     text-align: center;
     cursor: pointer;
+}
+.btn-send:hover {
+    color: #B2D732;
+    background-color: #0B2F3D;
+
+}
+.navbar .sideicon {
+    display: none;
+    color: #F0F7D4;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-weight: 500;
 }
 footer {
     display: flex;
@@ -113,3 +163,26 @@ footer p {
     letter-spacing: 1px;
 }
 /** html responsive **/
+/** navbar e sidepanel **/
+@media screen and (max-width: 768px) {
+    .navbar .nav-item:not(.margin-right.nav-item.logo) {
+        display: none;
+    }
+    .navbar .sideicon {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .navbar .sideicon:hover {
+        color: #B2D732;
+    }  
+}
+/** footer **/
+@media screen and (max-width: 575px) {
+    footer p {
+        font-size: 1rem;
+        padding: 8px;
+        margin: 8px;
+    }
+}
+

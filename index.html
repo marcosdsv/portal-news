@@ -8,12 +8,28 @@
     <script src="assets/js/fecharNoticia.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="margin-right"><a href="index.html" class="nav-item logo">Logo</a></div>
-        <div><a href="index.html" class="nav-item">Home</a></div>
-        <div><a href="sobre.html" class="nav-item">Sobre</a></div>
-        <div><a href="contato.html" class="nav-item">Contato</a></div>
-        <div><a href="saibamais.html" class="nav-item">Saiba mais</a></div>
+    <!-- navbar -->
+    <div class="navbar" id="navbar">
+        <a href="index.html" class="margin-right nav-item logo">Logo</a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="sobre.html" class="nav-item">Sobre</a>
+        <a href="contato.html" class="nav-item">Contato</a>
+        <a href="saibamais.html" class="nav-item">Saiba mais</a>
+        <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
+            <span>&#9776;</span>
+        </a>
+        <!-- sidepanel -->
+        <div class="sidepanel" id="sidePanel">
+            <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
+                <span>&#9776;</span>
+            </a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
+            <a href="index.html" class="side-item">Home</a>
+            <a href="sobre.html" class="side-item">Sobre</a>
+            <a href="contato.html" class="side-item">Contato</a>
+            <a href="saibamais.html" class="side-item">Saiba mais</a>
+        </div>
+        <!-- fim sidepanel -->
     </div>
     <main>
         <div class="noticias">
