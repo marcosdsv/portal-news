@@ -24,6 +24,9 @@
 .col-9 {
     width: 75%;
 }
+.col-4 {
+    width: 33.33%;
+}
 .navbar {
     width: 100%;
     display: flex;
@@ -250,7 +253,6 @@
 .btn-send:hover {
     color: #B2D732;
     background-color: #0B2F3D;
-
 }
 .navbar .sideicon {
     display: none;
@@ -258,6 +260,58 @@
     text-decoration: none;
     padding: 20px 30px;
     font-weight: 500;
+}
+/** Sobre **/
+.title-sobre h1 {
+    font-size: 1.8rem;
+    color: #0B2F3D;
+    margin: 20px 0;
+    text-align: center;
+}
+.title-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.container-sobre {
+    display: flex;
+    flex-direction: row;
+}
+.card-sobre {
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    transition: 0.3s;
+}
+.card-sobre:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.resposive-img-sobre {
+    width: 100%;
+    height: auto;
+}
+.box-img-sobre {
+    margin: 0 8px;
+}
+.box-img-sobre > p {
+    text-align: justify;
+    margin: 10px 0;
+}
+.box-img-sobre > h2 {
+    color: #0B2F3D;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.box-img-sobre .btn-sobre {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #0a66c2;
+    color: #f1f1f1;
+    display: block;
+    letter-spacing: 1px;
+    width: 100%;
 }
 hr {
     margin-top: 10px;
@@ -286,6 +340,7 @@ footer p {
     color: #b2d732;
     letter-spacing: 1px;
 }
+
 /** html responsive **/
 /** navbar e sidepanel **/
 @media screen and (max-width: 768px) {
@@ -309,4 +364,3 @@ footer p {
         margin: 8px;
     }
 }
-
