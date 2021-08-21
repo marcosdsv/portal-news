@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Portal News</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <script src="assets/js/expandirNoticia.js"></script>
+    <script src="assets/js/validaForm.js"></script>
     <script src="assets/js/fecharNoticia.js"></script>
 </head>
 
@@ -37,6 +37,7 @@
             <!-- fim sidepanel -->
         </div>
         <!-- fim navbar-->
+		<main>
         <!-- contato-form -->
         <div class="content">
             <div class="boxform">
@@ -73,13 +74,14 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <input type="submit" class="btn-send" value="Enviar">
+                            <input type="submit" class="btn-send" value="Enviar" onclick="validaCampos()">
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <!-- fim contato-form -->
+		</main>
         <footer>
             <div class="row">
                 <div class="col-12">
