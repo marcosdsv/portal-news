@@ -21,6 +21,9 @@
 .col-12 {
     width: 100%;
 }
+.col-9 {
+    width: 75%;
+}
 .navbar {
     width: 100%;
     display: flex;
@@ -88,15 +91,8 @@
     height: auto;
     margin-top: 20px;
 }
-/** home **/
-.noticias {
-    border: 1px solid red;
-}
-.noticias #header-news-main {
-    border: 1px solid red;
-}
+/** Home **/
 .noticias #header-news-main h1 {
-    border: 1px solid black;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
@@ -104,7 +100,6 @@
     margin: 20px;
 }
 .noticias #header-news-main p {
-    border: 1px solid red;
     margin: 0 20px;
     font-size: 1rem;
 }
@@ -114,16 +109,9 @@
 .noticia4 h2,
 .noticia5 h2,
 .noticia6 h2 {
-    border: 1px solid red;
-    margin: 10px 20px 0px 20px;
+    margin: 10px 20px 5px 20px;
     font-size: 1.6rem;
     color: #092834;
-}
-.noticias .noticia1 {
-    border: 1px solid blue;
-}
-.noticias .noticia1 .news-img-responsive {
-    border: 1px solid blue;
 }
 .noticias .noticia1 .box-text-img,
 .noticias .noticia2 .box-text-img,
@@ -131,7 +119,6 @@
 .noticias .noticia4 .box-text-img,
 .noticias .noticia5 .box-text-img,
 .noticias .noticia6 .box-text-img {
-    border: 1px solid green;
     background-color: #777;
     margin: 0 20px;
     position: relative;
@@ -141,7 +128,7 @@
 .noticia2 .text-img-news,
 .noticia3 .text-img-news,
 .noticia4 .text-img-news,
-.noticia5 .text-img-news
+.noticia5 .text-img-news,
 .noticia6 .text-img-news {
     position: absolute;
     bottom: 0;
@@ -200,8 +187,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 42.85%; /** 4:3 **/
-    border:1px solid red;
+    padding-top: 56.25%; /** 4:3 **/
 }
 .iframe-responsive-news {
     position: absolute;
@@ -212,15 +198,7 @@
     width: 100%;
     height: 100%;
 }
-
-
-
-
-
-
-
-
-
+/** Contato **/
 .boxform {
     padding: 24px;
     display: flex;
@@ -281,8 +259,15 @@
     padding: 20px 30px;
     font-weight: 500;
 }
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #092834;
+}
 main {
-    padding: 3% 13%;
+   display: flex;
+   flex-direction: column;
+   padding: 3% 17%;
 }
 footer {
     display: flex;
