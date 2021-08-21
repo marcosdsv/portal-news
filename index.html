@@ -12,31 +12,34 @@
 <body>
     <div class="container">
         <!-- navbar -->
-        <div class="navbar" id="navbar">
-            <a href="index.html" class="margin-right nav-item logo">Logo</a>
-            <a href="index.html" class="nav-item">Home</a>
-            <a href="sobre.html" class="nav-item">Sobre</a>
-            <a href="contato.html" class="nav-item">Contato</a>
-            <a href="saibamais.html" class="nav-item">Saiba mais</a>
-            <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
-                <span>&#9776;</span>
-            </a>
-            <!-- sidepanel -->
-            <div class="sidepanel" id="sidePanel">
-                <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
+        <header>
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="margin-right nav-item logo">Logo</a>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="sobre.html" class="nav-item">Sobre</a>
+                <a href="contato.html" class="nav-item">Contato</a>
+                <a href="saibamais.html" class="nav-item">Saiba mais</a>
+                <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
                     <span>&#9776;</span>
                 </a>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
-                <a href="index.html" class="side-item">Home</a>
-                <a href="sobre.html" class="side-item">Sobre</a>
-                <a href="contato.html" class="side-item">Contato</a>
-                <a href="saibamais.html" class="side-item">Saiba mais</a>
-            </div>
-            <!-- fim sidepanel -->
-        </div>
+                <!-- sidepanel -->
+                <div class="sidepanel" id="sidePanel">
+                    <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
+                        <span>&#9776;</span>
+                    </a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
+                    <a href="index.html" class="side-item">Home</a>
+                    <a href="sobre.html" class="side-item">Sobre</a>
+                    <a href="contato.html" class="side-item">Contato</a>
+                    <a href="saibamais.html" class="side-item">Saiba mais</a>
+                </div>
+                <!-- fim sidepanel -->
+            </nav>
+        </header>
         <!-- fim navbar -->
         <!-- main -->
         <main>
+            <!-- noticias-->
             <article class="noticias">
                 <div class="row">
                     <div class="col-12">
@@ -47,6 +50,7 @@
                         </header>
                     </div>
                 </div>
+                <!-- noticia 1-->
                 <div class="row">
                     <div class="col-12">
                         <article class="noticia1">
@@ -99,6 +103,8 @@
                         </article>
                     </div>
                 </div>
+                <!-- fim noticia 1-->
+                <!-- noticia 2-->
                 <div class="row">
                     <div class="col-12">
                         <article class="noticia2">
@@ -150,6 +156,8 @@
                         </article>
                     </div>
                 </div>
+                <!-- fim noticia 2-->
+                <!-- noticia 3-->
                 <div class="row">
                     <div class="col-12">
                         <article class="noticia3">
@@ -176,8 +184,7 @@
                                         mundo todo só estará seguro depois que grande parte ou quase a totalidade da
                                         população mundial
                                         tiver sido imunizada”, afirmou o presidente da República, Jair Bolsonaro.</p>
-                                    <a href="#" class="links" id="link3" style="display: block"
-                                        onclick="mostrarNoticia3()">Continuar
+                                    <a href="#" class="links" id="link3" onclick="mostrarNoticia3()">Continuar
                                         lendo</a>
                                 </div>
                             </div>
@@ -201,91 +208,164 @@
                                 </p>
                                 <p>Confira o vídeo da matéria: </p>
                                 <div class="box-video-news">
-                                    <iframe style="padding-top: 2%;" width="560" height="315"
-                                        src="https://www.youtube.com/embed/RsmMQnvervQ" title="YouTube video player"
-                                        frameborder="0"
+                                    <iframe style="padding-top: 2%;" src="https://www.youtube.com/embed/RsmMQnvervQ"
+                                        title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen class="iframe-responsive-news"></iframe>
-                                    <p>Fonte: Foto do canal Casa Civil da Presidência da República</p>
-                                    <p>Fonte: Casa Civil da Presidência da República</p>
+
                                 </div>
+                                <p>Fonte: Foto do canal Casa Civil da Presidência da República</p>
+                                <p>Fonte: Casa Civil da Presidência da República</p>
                                 <a href="#" class="links" id="fechar3" onclick="fechar3()">Fechar notícia</a>
                             </div>
                         </article>
                     </div>
                 </div>
-
-                <article class="noticia4">
-                    <h2>Paciente vence Covid-19 após 94 dias de luta e dança forró com médica para comemorar em GO</h2>
-                    <img src="assets/img/noticia4.jpg" alt="descrição">
-                    <p>Foram necessários quase 100 dias, mas o marceneiro Elismário Amorim, 54 anos, venceu a Covid-19
-                        em um hospital de Goiânia (GO). Para comemorar sua alta, ele convidou a médica Isadora Mota,
-                        responsável pelo tratamento, para dançar forró.</p>
-                    <a href="#" class="links" id="link4" style="display: block" onclick="mostrarNoticia4()">Continuar
-                        lendo</a>
-                    <div id="corpoNoticia4" style="display: none">
-                        <p>Semanas antes, no estágio mais avançado e crítico da doença, Elismário chegou a ter 99% dos
-                            pulmões comprometidos.</p>
-                        <p>“O afeto faz parte da cura, faz parte da relação humana e também dessa relação entre
-                            profissional de saúde e paciente. O momento da dança com o Elismário foi algo extremamente
-                            gratificante e motiva a gente a continuar cuidando dos pacientes com muito zelo e amor”,
-                            disse a médica Isadora Mota.</p>
-                        <p>“Eu passei por um dos momentos mais difíceis da minha vida, onde 99% do meu pulmão foi
-                            comprometido. Quero agradecer à doutora Isadora, minha família e a todos que se empenharam
-                            no hospital para me ajudar com muito carinho e dedicação”, disse.</p>
-                        <a href="#" class="links" id="fechar4" onclick="fechar4()">Fechar notícia</a>
+                <!-- fim noticia 3-->
+                <!-- noticia 4-->
+                <div class="row">
+                    <div class="col-12">
+                        <article class="noticia4">
+                            <h2>Paciente vence Covid-19 após 94 dias de luta e dança forró com médica para comemorar em
+                                GO</h2>
+                            <div class="box-text-img">
+                                <img src="assets/img/noticia4.jpg" alt="Paciente vence Covid-19 após 94 dias de luta e dança forró com médica para comemorar em
+                                GO" class="news-img-responsive">
+                                <div class="text-img-news">
+                                    <p>Foram necessários quase 100 dias, mas o marceneiro Elismário Amorim, 54 anos,
+                                        venceu
+                                        a Covid-19
+                                        em um hospital de Goiânia (GO). Para comemorar sua alta, ele convidou a médica
+                                        Isadora Mota,
+                                        responsável pelo tratamento, para dançar forró.</p>
+                                    <a href="#" class="links" id="link4" onclick="mostrarNoticia4()">Continuar
+                                        lendo</a>
+                                </div>
+                            </div>
+                            <div id="corpoNoticia4">
+                                <p>Semanas antes, no estágio mais avançado e crítico da doença, Elismário chegou
+                                    a
+                                    ter 99% dos
+                                    pulmões comprometidos.</p>
+                                <p>“O afeto faz parte da cura, faz parte da relação humana e também dessa
+                                    relação
+                                    entre
+                                    profissional de saúde e paciente. O momento da dança com o Elismário foi
+                                    algo
+                                    extremamente
+                                    gratificante e motiva a gente a continuar cuidando dos pacientes com muito
+                                    zelo
+                                    e amor”,
+                                    disse a médica Isadora Mota.</p>
+                                <p>“Eu passei por um dos momentos mais difíceis da minha vida, onde 99% do meu
+                                    pulmão foi
+                                    comprometido. Quero agradecer à doutora Isadora, minha família e a todos que
+                                    se
+                                    empenharam
+                                    no hospital para me ajudar com muito carinho e dedicação”, disse.</p>
+                                <a href="#" class="links" id="fechar4" onclick="fechar4()">Fechar notícia</a>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="noticia5">
-                    <h2>São Paulo se aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid</h2>
-                    <img src="assets/img/noticia5.jpg" alt="descrição">
-                    <p>A cidade de São Paulo chegou a 98,5% dos adultos parcialmente imunizados contra a Covid-19 neste
-                        domingo (15). A população adulta totalmente vacinada representa 40,6%. A informação é da
-                        Secretaria Municipal de Saúde.</p>
-                    <p>Foram aplicadas, ao todo, 12.531.598 doses de imunizantes na capital paulista. São 8.776.321
-                        primeiras doses ou doses únicas e 3.437.083 segundas doses ou doses únicas.</p>
-                    <a href="#" class="links" id="link5" style="display: block" onclick="mostrarNoticia5()">Continuar
-                        lendo</a>
-                    <div id="corpoNoticia5" style="display: none">
-                        <p>O número foi alcançado após a Virada da Vacina, evento organizado pela Prefeitura de São
-                            Paulo, que imunizou jovens de 18 a 21 anos em uma maratona de 34 horas de serviço.</p>
-                        <p>Das 7 horas de sábado (14) até as 17 horas desde domingo (15), foram aplicadas 471.431 doses
-                            de imunizantes contra o coronavírus. Outras 32 mil doses ainda não foram contabilizadas, e
-                            só devem constar no sistema nesta segunda-feira (16).</p>
-                        <p>Confira o vídeo da matéria: </p>
-                        <iframe style="padding-top: 2%;" width="560" height="315"
-                            src="https://www.youtube.com/embed/NyzHn3EcE_k" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                        <p>Fonte: portalbonde</p>
-                        <p>Fonte: CNN Brasil</p>
-                        <a href="#" class="links" id="fechar5" onclick="fechar5()">Fechar notícia</a>
+                </div>
+                <!-- fim noticia 4-->
+                <!-- noticia 5-->
+                <div class="row">
+                    <div class="col-12">
+                        <article class="noticia5">
+                            <h2>São Paulo se aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid
+                            </h2>
+                            <div class="box-text-img">
+                                <img src="assets/img/noticia5.jpg"
+                                    alt="São Paulo se aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid" class="news-img-responsive">
+                                <div class="text-img-news">
+                                    <p>A cidade de São Paulo chegou a 98,5% dos adultos parcialmente imunizados contra a
+                                        Covid-19 neste
+                                        domingo (15). A população adulta totalmente vacinada representa 40,6%. A
+                                        informação é da
+                                        Secretaria Municipal de Saúde.</p>
+                                    <p>Foram aplicadas, ao todo, 12.531.598 doses de imunizantes na capital paulista.
+                                        São 8.776.321
+                                        primeiras doses ou doses únicas e 3.437.083 segundas doses ou doses únicas.</p>
+                                    <a href="#" class="links" id="link5" style="display: block"
+                                        onclick="mostrarNoticia5()">Continuar
+                                        lendo</a>
+                                </div>
+                            </div>
+                            <div id="corpoNoticia5">
+                                <p>O número foi alcançado após a Virada da Vacina, evento organizado pela Prefeitura de
+                                    São
+                                    Paulo, que imunizou jovens de 18 a 21 anos em uma maratona de 34 horas de serviço.
+                                </p>
+                                <p>Das 7 horas de sábado (14) até as 17 horas desde domingo (15), foram aplicadas
+                                    471.431 doses
+                                    de imunizantes contra o coronavírus. Outras 32 mil doses ainda não foram
+                                    contabilizadas, e
+                                    só devem constar no sistema nesta segunda-feira (16).</p>
+                                <p>Confira o vídeo da matéria: </p>
+                                <div class="box-video-news">
+                                    <iframe style="padding-top: 2%;" width="560" height="315"
+                                        src="https://www.youtube.com/embed/NyzHn3EcE_k" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <p>Fonte: portalbonde</p>
+                                    <p>Fonte: CNN Brasil</p>
+                                </div>
+                                <a href="#" class="links" id="fechar5" onclick="fechar5()">Fechar notícia</a>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="noticia6">
-                    <h2>Ministério da Saúde reduz intervalo entre doses da Pfizer de 90 para 21 dias</h2>
-                    <img src="assets/img/noticia6.jpg" alt="descrição">
-                    <p>O secretário executivo do Ministério da Saúde, Rodrigo Cruz, confirmou nesta segunda-feira, 26,
-                        que o intervalo entre a aplicação da primeira e segunda doses da vacina da Pfizer vai ser
-                        reduzido para 21 dias. Hoje, após ser imunizado com a primeira dose, é preciso esperar três
-                        meses para tomar a segunda aplicação do medicamento contra a COVID-19. O anúncio foi feito pelo
-                        secretário a jornalistas, mas não foi informado quando a mudança vai ser posta em prática.
-                        "Precisa ver qual é o melhor timing disso, mas que vai diminuir, vai", disse.</p>
-                    <a href="#" class="links" id="link6" style="display: block" onclick="mostrarNoticia6()">Continuar
-                        lendo</a>
-                    <div id="corpoNoticia6" style="display: none">
-                        <p>Apesar de dar como certa a redução do intervalo, Cruz afirmou que vai aguardar para saber
-                            quantas doses o Brasil receberá da vacina em agosto. "Vamos conversar com o laboratório para
-                            ver qual o cenário do próximo mês de entrega das doses. Além da questão da epidemia,
-                            precisamos verificar o cenário de abastecimento", declarou.</p>
-                        <p>"A gente está só vendo com Conass (Conselho de Secretários Estaduais de Saúde) e Conasems
-                            (Conselho de Secretários Municipais de Saúde), na tripartite, para gente ver qual é a melhor
-                            data para diminuir o prazo de 3 meses para 21 dias. Então, encurtando o prazo ficando o
-                            mínimo pontuado pela Pfizer", falou o secretário-executivo.</p>
-                        <a href="#" class="links" id="fechar6" onclick="fechar6()">Fechar notícia</a>
+                </div>
+                <!-- fim noticia 5-->
+                <!-- noticia 6-->
+                <div class="row">
+                    <div class="col-12">
+                        <article class="noticia6">
+                            <h2>Ministério da Saúde reduz intervalo entre doses da Pfizer de 90 para 21 dias</h2>
+                            <div class="box-text-img">
+                                <img src="assets/img/noticia6.jpg"
+                                    alt="Ministério da Saúde reduz intervalo entre doses da Pfizer de 90 para 21 dias" class="news-img-responsive">
+                                <div class="text-img-news">
+                                    <p>O secretário executivo do Ministério da Saúde, Rodrigo Cruz, confirmou nesta
+                                        segunda-feira, 26,
+                                        que o intervalo entre a aplicação da primeira e segunda doses da vacina da
+                                        Pfizer vai ser
+                                        reduzido para 21 dias. Hoje, após ser imunizado com a primeira dose, é preciso
+                                        esperar três
+                                        meses para tomar a segunda aplicação do medicamento contra a COVID-19. O anúncio
+                                        foi feito pelo
+                                        secretário a jornalistas, mas não foi informado quando a mudança vai ser posta
+                                        em prática.
+                                        "Precisa ver qual é o melhor timing disso, mas que vai diminuir, vai", disse.
+                                    </p>
+                                    <a href="#" class="links" id="link6"
+                                        onclick="mostrarNoticia6()">Continuar
+                                        lendo</a>
+                                </div>
+                            </div>
+                            <div id="corpoNoticia6">
+                                <p>Apesar de dar como certa a redução do intervalo, Cruz afirmou que vai aguardar para
+                                    saber
+                                    quantas doses o Brasil receberá da vacina em agosto. "Vamos conversar com o
+                                    laboratório para
+                                    ver qual o cenário do próximo mês de entrega das doses. Além da questão da epidemia,
+                                    precisamos verificar o cenário de abastecimento", declarou.</p>
+                                <p>"A gente está só vendo com Conass (Conselho de Secretários Estaduais de Saúde) e
+                                    Conasems
+                                    (Conselho de Secretários Municipais de Saúde), na tripartite, para gente ver qual é
+                                    a melhor
+                                    data para diminuir o prazo de 3 meses para 21 dias. Então, encurtando o prazo
+                                    ficando o
+                                    mínimo pontuado pela Pfizer", falou o secretário-executivo.</p>
+                                <a href="#" class="links" id="fechar6" onclick="fechar6()">Fechar notícia</a>
+                            </div>
+                        </article>
                     </div>
-                </article>
+                </div>
+                <!-- fim noticia 6-->
             </article>
+            <!-- noticias -->
         </main>
         <!-- fim main -->
         <footer>
