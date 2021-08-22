@@ -10,159 +10,157 @@
 <script src="assets/js/fecharNoticia.js"></script>
 
 <body>
-    <div class="container">
-        <!-- navbar -->
-        <header>
-            <nav class="navbar" id="navbar">
-                <a href="index.html" class="margin-right nav-item logo">Portal News</a>
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="sobre.html" class="nav-item">Sobre</a>
-                <a href="contato.html" class="nav-item">Contato</a>
-                <a href="saibamais.html" class="nav-item">Saiba mais</a>
-                <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
+    <!-- navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="margin-right nav-item logo">Portal News</a>
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="sobre.html" class="nav-item">Sobre</a>
+            <a href="contato.html" class="nav-item">Contato</a>
+            <a href="saibamais.html" class="nav-item">Saiba mais</a>
+            <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
+                <span>&#9776;</span>
+            </a>
+            <!-- sidepanel -->
+            <div class="sidepanel" id="sidePanel">
+                <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
                     <span>&#9776;</span>
                 </a>
-                <!-- sidepanel -->
-                <div class="sidepanel" id="sidePanel">
-                    <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
-                        <span>&#9776;</span>
-                    </a>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
-                    <a href="index.html" class="side-item">Home</a>
-                    <a href="sobre.html" class="side-item">Sobre</a>
-                    <a href="contato.html" class="side-item">Contato</a>
-                    <a href="saibamais.html" class="side-item">Saiba mais</a>
-                </div>
-                <!-- fim sidepanel -->
-            </nav>
-        </header>
-        <!-- fim navbar-->
-        <main>
-            <div class="row title-sobre">
-                <div class="col-12">
-                    <h1>Sobre nós</h1>
-                    <p>Nessa página você pode encontrar informações do perfil das pessoas envolvidas na construção desse projeto.</p>
-                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
+                <a href="index.html" class="side-item">Home</a>
+                <a href="sobre.html" class="side-item">Sobre</a>
+                <a href="contato.html" class="side-item">Contato</a>
+                <a href="saibamais.html" class="side-item">Saiba mais</a>
             </div>
-            <div class="row container-sobre">
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
+            <!-- fim sidepanel -->
+        </nav>
+    </header>
+    <!-- fim navbar-->
+    <main class="container">
+        <div class="row title-sobre">
+            <div class="col-12">
+                <h1>Sobre nós</h1>
+                <p>Nessa página você pode encontrar informações do perfil das pessoas envolvidas na construção desse
+                    projeto.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
                     </div>
-                    <!-- fim card -->
                 </div>
-
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- fim card -->
-                </div>
-
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- fim card -->
-                </div>
+                <!-- fim card -->
             </div>
 
-            <div class="row container-sobre">
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
                     </div>
-                    <!-- fim card -->
                 </div>
-
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- fim card -->
-                </div>
-
-                <div class="col-4">
-                    <!-- card -->
-                    <div class="card-sobre">
-                        <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
-                        <div class="box-img-sobre">
-                            <h2>Seu nome</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
-                                dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
-                                malesuada fames ac ante ipsum primis in faucibus.
-                            </p>
-                            <p>
-                                <a href="#" class="btn-sobre">LinkedIn</a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- fim card -->
-                </div>
+                <!-- fim card -->
             </div>
-        </main>
-    </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- fim card -->
+            </div>
+
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- fim card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- fim card -->
+            </div>
+            <div class="col-6">
+                <!-- card -->
+                <div class="card-sobre">
+                    <img src="./assets/img/avatar1_sobre.jpg" alt="seu nome" class="resposive-img-sobre" alt="nome">
+                    <div class="box-img-sobre">
+                        <h2>Seu nome</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod, nulla eget
+                            dictum ornare, ante mi mollis arcu, et consequat risus felis non leo. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                        <p>
+                            <a href="#" class="btn-sobre">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- fim card -->
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="row">
             <div class="col-12">
@@ -170,6 +168,7 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
