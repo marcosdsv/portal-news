@@ -8,12 +8,12 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-96x96.png">
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <script src="assets/js/expandirNoticia.js"></script>
-    <script src="assets/js/fecharNoticia.js"></script>
+    <script src="./assets/js/expandirNoticia.js"></script>
+    <script src="./assets/js/fecharNoticia.js"></script>
+    <script src="./assets/js/validaForm.js"></script>
 </head>
 
 <body>
-    <div class="container">
         <!-- navbar -->
         <header>
             <nav class="navbar" id="navbar">
@@ -40,7 +40,7 @@
             </nav>
         </header>
         <!-- fim navbar-->
-        <main>
+        <main class="container">
             <!-- contato-form -->
             <div class="content">
                 <div class="boxform">
@@ -58,7 +58,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <label for="email" class="label">E-mail:</label>
-                                <input type="text" name="email" class="form-input" value="" id="email"
+                                <input type="email" name="email" class="form-input" value="" id="email"
                                     placeholder="Seu melhor e-mail" required>
                             </div>
                         </div>
@@ -93,7 +93,6 @@
                 </div>
             </div>
         </footer>
-    </div>
     <script src="./assets/js/app.js"></script>
 </body>
 
