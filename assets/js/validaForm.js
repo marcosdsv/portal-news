@@ -6,6 +6,6 @@ function validaCampos(){
 	if(nome != "" && email != "" && assunto != "" && msg != ""){
 		alert("Sua mensagem foi enviada com sucesso");
 	}else{
-		alert("todos os campos são obrigatório");
+		alert("todos os campos são obrigatórios");
 	}
 }
