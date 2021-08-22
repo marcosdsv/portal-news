@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-    <meta charset="UTF-8">
-    <title>Saiba mais - Portal News</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-96x96.png">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <script src="assets/js/expandirNoticia.js"></script>
-    <script src="assets/js/fecharNoticia.js"></script>
+<meta charset="UTF-8">
+<title>Saiba mais - Portal News</title>
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-96x96.png">
+<link rel="stylesheet" href="./assets/css/estilo.css">
+<script src="./assets/js/expandirNoticia.js"></script>
+<script src="./assets/js/fecharNoticia.js"></script>
 
 <body>
     <!-- navbar -->
@@ -37,54 +36,85 @@
         </nav>
     </header>
     <!-- fim navbar-->
-    <main>
-	<p>essa página é para mostrar os links das notícias utilizadas na home do site</p>
-	<p>fique avontade para acessar os links e ter acesso a outras notícias</p>
-<table border="1">
-<tr>
-<th>Site</th>
-<th>Matéria</th>
-</tr>
-<tr>
-<td>Agência Brasil</td>
-<td><a href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-08/covid-19-novo-lote-de-vacinas-da-pfizer-chega-ao-brasil" target="_blank">Acesse: Novo lote de vacinas da Pfizer chega ao Brasil</a></td>
-</tr>
-<tr>
-<td>Agência Brasil</td>
-<td><a href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-07/com-60%25-da-populacao-vacinada-mortes-e-casos-de-covid-19-caem-40%25" target="_blank">Acesse: Com 60% da população vacinada, mortes e casos de covid-19 caem 40%</a></td>
-</tr>
-<tr>
-<td>Casa civil</td>
-<td><a href="https://www.gov.br/casacivil/pt-br/assuntos/noticias/2021/junho/brasil-ira-produzir-vacina-contra-a-covid-19-com-insumo-fabricado-em-territorio-nacional#:~:text=Nesta%20ter%C3%A7a%2Dfeira%20(1%C2%BA)%2C%20o%20Governo%20Federal%20assinou,com%20Ingrediente%20Farmac%C3%AAutico%20Ativo%20(IFA)" target="_blank">Acesse: Brasil irá produzir vacina contra a Covid-19 com insumo fabricado em território nacional</td>
-</tr>
-<tr>
-<td>Canal YouTube Casa Civil</td>
-<td><a href="https://www.youtube.com/watch?v=RsmMQnvervQ" target="_blank">Acesse vídeo: Brasil irá produzir vacina contra a Covid-19 com insumo fabricado em território nacional</a></td>
-</tr>
-<tr>
-<td>Razões para acreditar</td>
-<td><a href="https://razoesparaacreditar.com/paciente-vence-covid-comemora-danca-medica/" target="_blank">Paciente vence Covid-19 após 94 dias de luta e dança forró com médica para comemorar em GO</a></td>
-</tr>
-<tr>
-<td>Portal bonde</td>
-<td><a href="https://www.bonde.com.br/bondenews/brasil/sao-paulo-se-aproxima-de-99-dos-adultos-com-a-primeira-dose-da-vacina-contra-a-covid-543964.html" target="_blank">Acesse: São Paulo se aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid</a></td>
-</tr>
-<tr>
-<td>Canal no YouTube CNN Brasil</td>
-<td><a href="https://www.youtube.com/watch?v=NyzHn3EcE_k" target="_blank">Acesse vídeo: São Paulo se aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid</a></td>
-</tr>
-<tr>
-<td>Jornal Estado de Minas</td>
-<td><a href="https://www.em.com.br/app/noticia/nacional/2021/07/26/interna_nacional,1290114/ministerio-da-saude-reduz-intervalo-entre-doses-da-pfizer-de-90-para-21-dia.shtml" target="_blank">Acesse: Ministério da Saúde reduz intervalo entre doses da Pfizer de 90 para 21 dias</a></td>
-</tr>
-</table>
-    </main>
-	        <footer>
-            <div class="row">
-                <div class="col-12">
-                    <p>&copy; Todos os direitos reservados | Portal News</p>
-                </div>
+    <main class="container">
+        <header class="header-saibamais">
+            <h1>Saiba mais</h1>
+            <p>Essa página é para mostrar os links das notícias utilizadas na home do site.</p>
+            <p>Fique avontade para acessar os links e ter acesso a outras notícias.</p>
+        </header>
+        <div id="tableSaibaMais">
+            <div class="boxtable">
+                <table>
+                    <tr>
+                        <th>Site</th>
+                        <th>Matéria - links</th>
+                    </tr>
+                    <tr>
+                        <td>Agência Brasil</td>
+                        <td><a href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-08/covid-19-novo-lote-de-vacinas-da-pfizer-chega-ao-brasil"
+                                target="_blank">Acesse: Novo lote de vacinas da Pfizer chega ao Brasil</a></td>
+                    </tr>
+                    <tr>
+                        <td>Agência Brasil</td>
+                        <td><a href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-07/com-60%25-da-populacao-vacinada-mortes-e-casos-de-covid-19-caem-40%25"
+                                target="_blank">Acesse: Com 60% da população vacinada, mortes e casos de covid-19 caem
+                                40%</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Casa civil</td>
+                        <td><a href="https://www.gov.br/casacivil/pt-br/assuntos/noticias/2021/junho/brasil-ira-produzir-vacina-contra-a-covid-19-com-insumo-fabricado-em-territorio-nacional#:~:text=Nesta%20ter%C3%A7a%2Dfeira%20(1%C2%BA)%2C%20o%20Governo%20Federal%20assinou,com%20Ingrediente%20Farmac%C3%AAutico%20Ativo%20(IFA)"
+                                target="_blank">Acesse: Brasil irá produzir vacina contra a Covid-19 com insumo
+                                fabricado em
+                                território nacional</td>
+                    </tr>
+                    <tr>
+                        <td>Canal YouTube Casa Civil</td>
+                        <td><a href="https://www.youtube.com/watch?v=RsmMQnvervQ" target="_blank">Acesse vídeo: Brasil
+                                irá
+                                produzir vacina contra a Covid-19 com insumo fabricado em território nacional</a></td>
+                    </tr>
+                    <tr>
+                        <td>Razões para acreditar</td>
+                        <td><a href="https://razoesparaacreditar.com/paciente-vence-covid-comemora-danca-medica/"
+                                target="_blank">Paciente vence Covid-19 após 94 dias de luta e dança forró com médica
+                                para
+                                comemorar em GO</a></td>
+                    </tr>
+                    <tr>
+                        <td>Portal bonde</td>
+                        <td><a href="https://www.bonde.com.br/bondenews/brasil/sao-paulo-se-aproxima-de-99-dos-adultos-com-a-primeira-dose-da-vacina-contra-a-covid-543964.html"
+                                target="_blank">Acesse: São Paulo se aproxima de 99% dos adultos com a primeira dose da
+                                vacina
+                                contra a Covid</a></td>
+                    </tr>
+                    <tr>
+                        <td>Canal no YouTube CNN Brasil</td>
+                        <td><a href="https://www.youtube.com/watch?v=NyzHn3EcE_k" target="_blank">Acesse vídeo: São
+                                Paulo se
+                                aproxima de 99% dos adultos com a primeira dose da vacina contra a Covid</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jornal Estado de Minas</td>
+                        <td><a href="https://www.em.com.br/app/noticia/nacional/2021/07/26/interna_nacional,1290114/ministerio-da-saude-reduz-intervalo-entre-doses-da-pfizer-de-90-para-21-dia.shtml"
+                                target="_blank">Acesse: Ministério da Saúde reduz intervalo entre doses da Pfizer de 90
+                                para
+                                21
+                                dias</a></td>
+                    </tr>
+                </table>
             </div>
-        </footer>
+        </div>
+
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <p>&copy; Todos os direitos reservados | Portal News</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
