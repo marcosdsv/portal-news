@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Contato - Portal News</title>
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-96x96.png">
     <link rel="stylesheet" href="assets/css/estilo.css">
     <script src="./assets/js/expandirNoticia.js"></script>
@@ -14,88 +14,79 @@
 </head>
 
 <body>
-        <!-- navbar -->
-        <header>
-            <nav class="navbar" id="navbar">
-                <a href="index.html" class="margin-right nav-item logo">Portal News</a>
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="sobre.html" class="nav-item">Sobre</a>
-                <a href="contato.html" class="nav-item">Contato</a>
-                <a href="saibamais.html" class="nav-item">Saiba mais</a>
-                <a href="javascript:void(0);" onclick="toggleSide();" class="sideicon">
-                    <span>&#9776;</span>
-                </a>
-                <!-- sidepanel -->
-                <div class="sidepanel" id="sidePanel">
-                    <a href="javascript:void(0);" onclick="closeSide();" class="closebtn">
-                        <span>&#9776;</span>
-                    </a>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeSide()"><span>&#9776;</span></a>
-                    <a href="index.html" class="side-item">Home</a>
-                    <a href="sobre.html" class="side-item">Sobre</a>
-                    <a href="contato.html" class="side-item">Contato</a>
-                    <a href="saibamais.html" class="side-item">Saiba mais</a>
-                </div>
-                <!-- fim sidepanel -->
-            </nav>
-        </header>
-        <!-- fim navbar-->
-        <main class="container">
-            <!-- contato-form -->
-            <div class="content">
-                <div class="boxform">
-                    <form class="contato-form">
-                        <div class="row">
-                            <h1 class="col-12 title-contato">Contato</h1>
-							<p>Gostou de nossas notícias?</p>
-<p>Caso queira nos mandar alguma mensagem de crítica, elogio ou sugestão de alguma notícia basta utilizar o formulário abaixo!</p>
-
+    <!-- navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="margin-right nav-item logo">Portal News</a>
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="sobre.html" class="nav-item">Sobre</a>
+            <a href="contato.html" class="nav-item">Contato</a>
+            <a href="saibamais.html" class="nav-item">Saiba mais</a>
+            <a href="javascript:void(0);" onclick="toggleMenu();" class="sideicon">
+                <span>&#9776;</span>
+            </a>
+        </nav>
+    </header>
+    <!-- fim navbar-->
+    <main class="container">
+        <!-- contato-form -->
+        <div class="content">
+            <div class="boxform">
+                <form class="contato-form">
+                    <div class="row">
+                        <h1 class="col-12 title-contato">Contato</h1>
+                        <div class="texto-contato">
+                            <p>Gostou de nossas notícias?</p>
+                            <p>Caso queira nos mandar alguma mensagem de crítica,
+                                elogio ou sugestão de alguma notícia basta utilizar o
+                                formulário abaixo!</p>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="nomeusuario" class="label">Nome:</label>
-                                <input type="text" name="nome" class="form-input" value="" id="nomeusuario"
-                                    placeholder="Seu nome" required>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="nomeusuario" class="label">Nome:</label>
+                            <input type="text" name="nome" class="form-input" value="" id="nomeusuario"
+                                placeholder="Seu nome" required>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="email" class="label">E-mail:</label>
-                                <input type="email" name="email" class="form-input" value="" id="email"
-                                    placeholder="Seu melhor e-mail" required>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="email" class="label">E-mail:</label>
+                            <input type="email" name="email" class="form-input" value="" id="email"
+                                placeholder="Seu melhor e-mail" required>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="assunto" class="label">Assunto:</label>
-                                <input type="text" name="assunto" class="form-input" value="" id="assunto"
-                                    placeholder="Assunto da mensagem" required>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="assunto" class="label">Assunto:</label>
+                            <input type="text" name="assunto" class="form-input" value="" id="assunto"
+                                placeholder="Assunto da mensagem" required>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="msg" class="label">Descrição:</label>
-                                <textarea name="descricao" id="msg" cols="50" rows="7" class="descricao"
-                                    required></textarea>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="msg" class="label">Descrição:</label>
+                            <textarea name="descricao" id="msg" cols="50" rows="7" class="descricao"
+                                required></textarea>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <input type="submit" class="btn-send" value="Enviar" onclick="validaCampos()">
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="submit" class="btn-send" value="Enviar" onclick="validaCampos()">
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
-            <!-- fim contato-form -->
-        </main>
-        <footer>
-            <div class="row">
-                <div class="col-12">
-                    <p>&copy; Todos os direitos reservados | Portal News</p>
-                </div>
+        </div>
+        <!-- fim contato-form -->
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <p>&copy; Todos os direitos reservados | Portal News</p>
             </div>
-        </footer>
+        </div>
+    </footer>
     <script src="./assets/js/app.js"></script>
 </body>
 

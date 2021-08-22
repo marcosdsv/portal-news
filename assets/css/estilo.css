@@ -58,42 +58,9 @@
 .navbar .nav-item:focus {
     color: #B2D732;
 }
-.sidepanel {
-    height: 100vh; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: -460px;
-    border:1px solid #092834;
-    background-color: #092834;
-    overflow: hidden; 
-    padding-top: 60px; 
-    transition: 0.6s ease;
-}
-.sidepanel .side-item {
-    display: block;
-    -webkit-transition: 0.6s ease;
-    -moz-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    transition: 0.6s ease;
-    text-decoration: none;
-    color: #f1f1f1;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 5px 40px 5px 30px;
-    line-height: 30px;
-    position: relative;
-}
-.sidepanel .side-item:hover {
-    color: #b2d732;
-}
-.sidepanel .closebtn {
-    position: absolute;
-    text-decoration: none;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    color: #b2d732;
+.navbar .nav-item.logo {
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .content {
     width: 100%;
@@ -226,6 +193,15 @@
     margin-bottom: 12px;
     font-size: 1.8rem;
 }
+.contato-form .texto-contato {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.contato-form .texto-contato p {
+    font-size: 0.9rem;
+    line-height: 19px;
+    color: #092834;
+}
 .title-contato, .label {
     color: #092834;
     font-weight: 300;
@@ -264,7 +240,7 @@
     display: none;
     color: #F0F7D4;
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 25px 30px;
     font-weight: 500;
 }
 /** Sobre **/
@@ -320,12 +296,14 @@
     display: block;
     letter-spacing: 1px;
     width: 100%;
-    
 }
 .box-img-sobre .btn-sobre:hover{
     background-color: #0959aa;
     transition: 0.6s ease;
     color: white;
+}
+#listInfoSobre {
+    margin-left: 20px;
 }
 /** Saiba mais **/
 .header-saibamais h1 {
@@ -381,22 +359,28 @@ footer p {
     color: #b2d732;
     letter-spacing: 1px;
 }
-
 /** html responsive **/
 /** navbar e sidepanel **/
 @media screen and (max-width: 768px) {
-    .navbar .nav-item:not(.margin-right.nav-item.logo) {
+    .navbar a:not(:first-child) {
         display: none;
     }
-    .navbar .sideicon {
+}
+@media screen and (max-width: 768px) {
+    .navbar.nav-block {flex-direction: column;}
+    .navbar a.sideicon {
         display: block;
         position: absolute;
         right: 0;
+        background-color:  #B2D732;
+        color: #092834;
     }
-    .navbar .sideicon:hover {
-        color: #B2D732;
-    }  
-}
+    .navbar.nav-block a {
+        float: none;
+        display: block;
+    }
+    .navbar span:hover {color: #fff;}
+} 
 /** footer **/
 @media screen and (max-width: 575px) {
     footer p {
@@ -420,7 +404,6 @@ footer p {
     .noticia1 h2, .noticia2 h2, .noticia3 h2, 
     .noticia4 h2, .noticia5 h2, .noticia6 h2 {font-size: 1.5rem;}
 }
-
 /** Sobre nós **/
 @media screen and (max-width: 992px) {
     .container {padding: 5% 10%;}
