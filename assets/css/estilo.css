@@ -52,6 +52,7 @@
     text-decoration: none;
     padding: 25px 30px;
     font-weight: 500;
+    font-size: 17px;
 }
 .navbar .nav-item.logo:hover,
 .navbar .nav-item:hover,
@@ -61,6 +62,7 @@
 .navbar .nav-item.logo {
     font-weight: 600;
     text-transform: uppercase;
+    font-size: 20px;
 }
 .content {
     width: 100%;
@@ -76,7 +78,7 @@
 }
 .noticias #header-news-main p {
     margin: 0 20px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .noticia1 h2,
 .noticia2 h2,
@@ -205,12 +207,12 @@
 .title-contato, .label {
     color: #092834;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 16px;
 }
 .form-input, textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 9px;
+    padding: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 4px;
@@ -222,10 +224,10 @@
     display: block;
     width: 100%;
     background-color: #092834;
-    padding: 12px;
+    padding: 12px 20px;
     margin: 10px 0;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
     color: white;
@@ -313,7 +315,7 @@
     margin: 0 0 20px 0;
 }
 .header-saibamais p {
-   font-size: 1rem;
+   font-size: 17px;
 }
 .boxtable {
   background-color: white;
@@ -358,15 +360,13 @@ footer p {
     margin: 10px;
     color: #b2d732;
     letter-spacing: 1px;
+    text-align: center;
 }
 /** html responsive **/
-/** navbar e sidepanel **/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
     .navbar a:not(:first-child) {
         display: none;
     }
-}
-@media screen and (max-width: 768px) {
     .navbar.nav-block {flex-direction: column;}
     .navbar a.sideicon {
         display: block;
@@ -374,23 +374,32 @@ footer p {
         right: 0;
         background-color:  #B2D732;
         color: #092834;
+        padding: 26px 30px;
+        font-size: 18px;
     }
     .navbar.nav-block a {
         float: none;
         display: block;
     }
     .navbar span:hover {color: #fff;}
+    .navbar .nav-item, .navbar .nav-item:visited, 
+    .navbar .nav-item:focus {font-size: 17px}
+    .container {height: 100vh; overflow-y: auto;}
+    .text-img-news p {font-size: 15px;}
+    .noticias .noticia1 .links, 
+    .noticias .noticia2 .links, 
+    .noticias .noticia3 .links, 
+    .noticias .noticia4 .links, 
+    .noticias .noticia5 .links, 
+    .noticias .noticia6 .links {font-size: 15px;}
+    .col-6 {width: 100%}
+    .noticia1 h2, .noticia2 h2, .noticia3 h2, 
+    .noticia4 h2, .noticia5 h2, .noticia6 h2 {font-size: 1.5rem;}
+    .container {padding: 5% 7%;}
 } 
-/** footer **/
-@media screen and (max-width: 575px) {
-    footer p {
-        font-size: 1rem;
-        padding: 8px;
-        margin: 8px;
-    }
-}
-/** Home **/
+
 @media screen and (max-width: 992px) {
+    .container {padding: 5% 10%;height: 100vh; overflow-y: auto;}
     .noticia1 .text-img-news, 
     .noticia2 .text-img-news, 
     .noticia3 .text-img-news, 
@@ -398,19 +407,4 @@ footer p {
     .noticia5 .text-img-news, 
     .noticia6 .text-img-news {padding: 8px;}
     .text-img-news p {font-size: 0.9rem;}
-}
-@media screen and (max-width:600px){
-    .text-img-news p {font-size: 0.8rem;}
-    .noticia1 h2, .noticia2 h2, .noticia3 h2, 
-    .noticia4 h2, .noticia5 h2, .noticia6 h2 {font-size: 1.5rem;}
-}
-/** Sobre nós **/
-@media screen and (max-width: 992px) {
-    .container {padding: 5% 10%;}
-}
-@media screen and (max-width: 768px) {
-    .container {padding: 5% 7%;}
-}
-@media screen and (max-width: 700px) {
-    .col-6 {width: 100%}
 }
