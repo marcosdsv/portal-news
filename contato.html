@@ -32,49 +32,29 @@
         <!-- contato-form -->
         <div class="content">
             <div class="boxform">
+                <div class="texto-contato">
+                    <p>Gostou de nossas notícias?</p>
+                    <p>Caso queira nos mandar alguma mensagem de crítica,
+                        elogio ou sugestão de alguma notícia basta utilizar o
+                        formulário abaixo!</p>
+                </div>
                 <form class="contato-form">
-                    <div class="row">
-                        <h1 class="col-12 title-contato">Contato</h1>
-                        <div class="texto-contato">
-                            <p>Gostou de nossas notícias?</p>
-                            <p>Caso queira nos mandar alguma mensagem de crítica,
-                                elogio ou sugestão de alguma notícia basta utilizar o
-                                formulário abaixo!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="nomeusuario" class="label">Nome:</label>
-                            <input type="text" name="nome" class="form-input" value="" id="nomeusuario"
-                                placeholder="Seu nome" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="email" class="label">E-mail:</label>
-                            <input type="email" name="email" class="form-input" value="" id="email"
-                                placeholder="Seu melhor e-mail" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="assunto" class="label">Assunto:</label>
-                            <input type="text" name="assunto" class="form-input" value="" id="assunto"
-                                placeholder="Assunto da mensagem" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="msg" class="label">Descrição:</label>
-                            <textarea name="descricao" id="msg" cols="50" rows="7" class="descricao"
-                                required></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="submit" class="btn-send" value="Enviar" onclick="validaCampos()">
-                        </div>
-                    </div>
+                    <h1 class="col-12 title-contato">Contato</h1>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Seu nome" id="nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Seu melhor e-mail" id="email" required>
+
+                    <label for="assunto">E-mail</label>
+                    <input type="text" name="text" placeholder="Assunto da mensagem" id="assunto" required>
+
+                    <label for="descricao">Descrição:</label>
+                    <textarea name="descricao" placeholder="Descrição da mensagem" id="descricao" cols="50" rows="7"
+                        required></textarea>
+
+                    <input type="submit" value="Enviar" class="btn-send" onclick="validaCampos()">
                 </form>
             </div>
         </div>
