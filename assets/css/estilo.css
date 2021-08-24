@@ -200,7 +200,7 @@
     margin-bottom: 15px;
 }
 .contato-form .texto-contato p {
-    font-size: 0.9rem;
+    font-size: 16px;
     line-height: 19px;
     color: #092834;
 }
@@ -374,7 +374,7 @@ footer p {
         right: 0;
         background-color:  #B2D732;
         color: #092834;
-        padding: 26px 30px;
+        padding: 27px 30px;
         font-size: 18px;
     }
     .navbar.nav-block a {
